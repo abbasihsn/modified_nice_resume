@@ -26,8 +26,8 @@ class Footer extends Component {
                 <li>&copy; Copyright 2021 Nordic Giant</li>
                 <li>
                   Design by{" "}
-                  <a title="Styleshout" href="http://www.styleshout.com/">
-                    Styleshout
+                  <a title="Hasan Abbasi" href="http://www.abbasihsn.ir/">
+                  Hasan Abbasi
                   </a>
                 </li>
               </ul>

@@ -1,108 +1,183 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "name":"Hi, I am Hasan",
+    "description":"I am a Full Stack developer and I love learning new things.",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "bio":"I have a Master’s degree in digital electronics from the Electrical Engineering Department of the Sharif University of Technology, Tehran, Iran. \nAs an engineer, I like to work in various fields. To this aim, I have experience in different areas such as computer vision, machine learning, medical imaging, image processing, signal processing, and mobile app development. I like these fields, especially projects that utilize them in real-life applications. For extra information please check my CV.",
+    "contactmessage":"I like to connect to people around the world, feel free to start communication",
+    "email": "Abbasi.hsnn@gmail.com",
+    "phone": "+98-910-999-8831",
+    "github":"https://github.com/abbasihsn",
+    "project":"https://stackoverflow.com/users/14636964/hasan-abbasi",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"Azadi",
+      "city":"Tehran",
+      "state":"Iran",
+      "zip": ""
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "http://www.abbasihsn.ir/",
+    "resumedownload":"http://www.abbasihsn.ir/download/cv.pdf",
     "social":[
       {
         "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"",
         "className":"fa fa-facebook"
       },
       {
         "name":"twitter",
-        "url":"http://twitter.com",
+        "url":"#",
         "className":"fa fa-twitter"
       },
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/hasan-abbasi-06b87978",
         "className":"fa fa-linkedin"
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"http://instagram.com/abbasihsn",
         "className":"fa fa-instagram"
       },
       {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/abbasihsn",
         "className":"fa fa-github"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"I am a real self-learner! I have learned all skills by my own!",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Sharif University of Technology",
+        "degree":"Masters in Digital Electronics",
+        "graduated":"September 2015",
+        "description":"Biomedicla imaging, image processing, machine learning and computer vision"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Shahid Beheshti university",
+        "degree":"Electronics",
+        "graduated":"September 2013",
+        "description":"Image and signal processing"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"City development and innovation company",
+        "title":"Full Stack Developer",
+        "years":"November 2020 - Present",
+        "description":"Digital banking project."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Nemayandeh insurance company - Remote",
+        "title":"Full stack developer",
+        "years":"September 2020 - June 2021",
+        "description":"Flutter and Node JS developer"
+      },
+      {
+        "company":"Iranian Ofshore and Innovation Company",
+        "title":"Mobile application developer",
+        "years":"October 2019 - November 2020",
+        "description":"Flutter developer"
+      },
+      {
+        "company":"AICDL - Sharif University of Tech.",
+        "title":"Computer vision and machine learning developer",
+        "years":"September 2015 - September 2019",
+        "description":"Python developer"
       }
     ],
     "skills":[
       {
-        "name":"Python",
-        "level":"60%"
+        "name":"Flutter",
+        "level":"100%"
       },
       {
-        "name":"VueJs",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
+        "name":"Computer Vision",
         "level":"90%"
       },
       {
-        "name":"PHP",
+        "name":"Git",
+        "level":"85%"
+      },
+      {
+        "name":"Python",
         "level":"80%"
       },
       {
-        "name":"Swift",
-        "level":"50%"
+        "name":"C/C++",
+        "level":"78%"
+      },
+      {
+        "name":"Machine Learning",
+        "level":"70%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"60%"
       },
       {
         "name":"JAVA",
-        "level":"80%"
+        "level":"50%"
+      },
+      {
+        "name":"NodeJS",
+        "level":"50%"
+      },
+      {
+        "name":"PHP",
+        "level":"40%"
+      }
+      
+    ],
+    "software":[
+      {
+        "name":"Android Studio",
+        "level":"95%"
+      },
+      {
+        "name":"VScode",
+        "level":"90%"
+      },
+      {
+        "name":"Postman",
+        "level":"85%"
+      },
+      {
+        "name":"Matlab",
+        "level":"85%"
+      },
+      {
+        "name":"OpenCV",
+        "level":"83%"
+      },
+      {
+        "name":"Anaconda",
+        "level":"81%"
+      },
+      {
+        "name":"Scikit-learn",
+        "level":"75%"
+      },
+      {
+        "name":"Tensor Flow",
+        "level":"70%"
+      },
+      {
+        "name":"Latex",
+        "level":"65%"
+      },
+      {
+        "name":"Intelij",
+        "level":"55%"
+      },
+      {
+        "name":"Code Vision",
+        "level":"45%"
+      },
+      {
+        "name":"Unity",
+        "level":"30%"
       }
     ]
   },

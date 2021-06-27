@@ -2,13 +2,19 @@ import React, { Component } from "react";
 import Slide from "react-reveal";
 
 class Resume extends Component {
-  getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+  getSelectedColor = (value)=>{
+    if(value>80){
+      return "#007900";
+    } else if(value>60){
+      return "#63A169";
+    } else if(value>40){
+      return "#00FFBB";
+    } else if(value>20){
+      return "#11BBFF";
+    } else {
+      return "#FF0000";
     }
-    return color;
+
   }
 
   render() {
@@ -42,7 +48,20 @@ class Resume extends Component {
     });
 
     const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
+      const backgroundColor = this.getSelectedColor(Number(skills.level.length>3?skills.level.substring(0,3):skills.level.substring(0,2)));
+      const className = "bar-expand " + skills.name.toLowerCase();
+      const width = skills.level;
+
+      return (
+        <li key={skills.name}>
+          <span style={{ width, backgroundColor }} className={className}></span>
+          <em>{skills.name}</em>
+        </li>
+      );
+    });
+
+    const software = this.props.data.software.map((skills) => {
+      const backgroundColor = this.getSelectedColor(Number(skills.level.length>3?skills.level.substring(0,3):skills.level.substring(0,2)));
       const className = "bar-expand " + skills.name.toLowerCase();
       const width = skills.level;
 
@@ -97,6 +116,23 @@ class Resume extends Component {
 
               <div className="bars">
                 <ul className="skills">{skills}</ul>
+              </div>
+            </div>
+          </div>
+        </Slide>
+        <Slide left duration={1300}>
+          <div className="row skill">
+            <div className="three columns header-col">
+              <h1>
+                <span>Software & packages</span>
+              </h1>
+            </div>
+
+            <div className="nine columns main-col">
+              <p>{}</p>
+
+              <div className="bars">
+                <ul className="skills">{software}</ul>
               </div>
             </div>
           </div>
