@@ -11,9 +11,25 @@ class Header extends Component {
     const name = this.props.data.name;
     const description = this.props.data.description;
 
+    let config = {
+      num: [1, 2],
+      rps: 0.3, //
+      radius: [5, 30],
+      life: [1, 3],
+      v: [0.5],
+      tha: [-40, 40],
+      alpha: [0.6, 0],
+      scale: [0.1, 0.4],
+      position: "all",
+      color: ["#00ffff"],
+      cross: "dead",
+      // emitter: "follow",
+      random: null,
+    };
+
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="custom" bg={true} config={config} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -67,10 +83,18 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
+                <a
+                  href={project}
+                  className="button btn project-btn"
+                  style={{ borderRadius: "2px" }}
+                >
                   <i className="fa fa-book"></i>Stack overflow
                 </a>
-                <a href={github} className="button btn github-btn">
+                <a
+                  href={github}
+                  className="button btn github-btn"
+                  style={{ borderRadius: "2px" }}
+                >
                   <i className="fa fa-github"></i>Github
                 </a>
               </ul>

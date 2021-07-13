@@ -14,7 +14,7 @@ class App extends Component {
     super(props);
     this.state = {
       foo: "bar",
-      resumeData: {}
+      resumeData: {},
     };
 
     ReactGA.initialize("UA-110570651-1");
@@ -26,13 +26,13 @@ class App extends Component {
       url: "./resumeData.json",
       dataType: "json",
       cache: false,
-      success: function(data) {
+      success: function (data) {
         this.setState({ resumeData: data });
       }.bind(this),
-      error: function(xhr, status, err) {
+      error: function (xhr, status, err) {
         console.log(err);
         alert(err);
-      }
+      },
     });
   }
 

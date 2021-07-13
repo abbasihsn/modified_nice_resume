@@ -2,20 +2,19 @@ import React, { Component } from "react";
 import Slide from "react-reveal";
 
 class Resume extends Component {
-  getSelectedColor = (value)=>{
-    if(value>80){
+  getSelectedColor = (value) => {
+    if (value > 80) {
       return "#007900";
-    } else if(value>60){
+    } else if (value > 60) {
       return "#63A169";
-    } else if(value>40){
+    } else if (value > 40) {
       return "#00FFBB";
-    } else if(value>20){
+    } else if (value > 20) {
       return "#11BBFF";
     } else {
       return "#FF0000";
     }
-
-  }
+  };
 
   render() {
     if (!this.props.data) return null;
@@ -48,26 +47,50 @@ class Resume extends Component {
     });
 
     const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getSelectedColor(Number(skills.level.length>3?skills.level.substring(0,3):skills.level.substring(0,2)));
+      const backgroundColor = this.getSelectedColor(
+        Number(
+          skills.level.length > 3
+            ? skills.level.substring(0, 3)
+            : skills.level.substring(0, 2)
+        )
+      );
       const className = "bar-expand " + skills.name.toLowerCase();
       const width = skills.level;
 
+      const borderRadius = width === "100%" ? "5px" : "5px 0px 0px 5px";
+
       return (
         <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
+          <span
+            style={{
+              width,
+              backgroundColor,
+              borderRadius: borderRadius,
+            }}
+            className={className}
+          ></span>
           <em>{skills.name}</em>
         </li>
       );
     });
 
     const software = this.props.data.software.map((skills) => {
-      const backgroundColor = this.getSelectedColor(Number(skills.level.length>3?skills.level.substring(0,3):skills.level.substring(0,2)));
+      const backgroundColor = this.getSelectedColor(
+        Number(
+          skills.level.length > 3
+            ? skills.level.substring(0, 3)
+            : skills.level.substring(0, 2)
+        )
+      );
       const className = "bar-expand " + skills.name.toLowerCase();
       const width = skills.level;
-
+      const borderRadius = width === "100%" ? "5px" : "5px 0px 0px 5px";
       return (
         <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
+          <span
+            style={{ width, backgroundColor, borderRadius: borderRadius }}
+            className={className}
+          ></span>
           <em>{skills.name}</em>
         </li>
       );
@@ -102,37 +125,19 @@ class Resume extends Component {
             <div className="nine columns main-col">{work}</div>
           </div>
         </Slide>
-
-        <Slide left duration={1300}>
-          <div className="row skill">
+        <Slide>
+          <div className="row work">
             <div className="three columns header-col">
               <h1>
                 <span>Skills</span>
               </h1>
             </div>
-
             <div className="nine columns main-col">
               <p>{skillmessage}</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
-            </div>
-          </div>
-        </Slide>
-        <Slide left duration={1300}>
-          <div className="row skill">
-            <div className="three columns header-col">
-              <h1>
-                <span>Software & packages</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <p>{}</p>
-
-              <div className="bars">
-                <ul className="skills">{software}</ul>
+              <div className="skills__container">
+                <div className="bars">
+                  <ul className="skills">{skills}</ul>
+                </div>
               </div>
             </div>
           </div>
